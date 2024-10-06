@@ -4,6 +4,7 @@ Este repositorio contiene una colección de notas y ejemplos sobre diversos tema
 
 # Temas Actuales
 - Promises
-
+- CallBacks
+- Utilidades
 ![Preview](JS_PREVIEW.jpg)
 

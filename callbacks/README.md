@@ -1,7 +1,7 @@
 # Funcion Callback
 Una funcion de **callback** es una funcion que se pasa como argumento otra funcion, para despues ser ejecutada.
 Una funcion que recibe como parametro otra funcion es llamada **"Funcion de orden superior"** o **"high-order"**.
-```
+```javascript
     <!-- Callback         ↓↓↓↓↓-->
     function highOrder(MostrarSaludo){
 

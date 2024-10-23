@@ -9,6 +9,12 @@ Una funcion que recibe como parametro otra funcion es llamada **"Funcion de orde
     
     }
 ```
+### Caracteristicas principales
+
+- Permiten manejar operaciones asincronas de manera eficiente
+- Ayudan a evitar el bloqueo del hilo principal de ejecucion
+- Son fundamentales para implementar la programacion basada en eventos JS
+
 ## ¿Porque Utilizar Callbacks?
 La gran mayoria de nuestro codigo se ejecuta de una manera sincrona, es decir se ejecuta una linea despues de otra, Usualmente cuando hacemos consultas a servidores externos desconocemos el tiempo que esta consulta tomara. Esta es una situacion donde las funciones callback pueden ser utiles.
 

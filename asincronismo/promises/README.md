@@ -1,5 +1,30 @@
 # Promises
-una promesa es utilizada para facilitar el manejo de codigo asincrono, gracias a su facilidad durante el manejo de errores, ya que a diferencia de los callback estos te permiten acceder a los metodos **"then"** y **"catch"**
+Una promesa en JS es un objeto que representa la eventual finalizacion de una operacion asincrona. Escencialmente es una forma de manejar codigo asincrono de una manera mas elegante y legible que las callbacks tradicionales
+
+Las promesas tienen tres estados
+- Pending: estado inicial, ni cumplido ni rechazado
+- Fulfilled: la operacion se completo con exito
+- Rejected: la operacion fallo
+
+### Creacion de una promesa
+Una promesa se crea utilizando el constructor Promise
+``` javascript
+const miPromesa = new Promise((resolve, reject) => {
+  // Operación asíncrona
+  setTimeout(() => {
+    const exito = true;
+    if (exito) {
+      resolve("Operación completada");
+    } else {
+      reject("Error en la operación");
+    }
+  }, 1000);
+});
+
+miPromesa
+  .then(resultado => console.log(resultado))
+  .catch(error => console.error(error));
+```
 
 ## Resolve y Reject
 

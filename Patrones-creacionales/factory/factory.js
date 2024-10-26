@@ -29,29 +29,19 @@ class carB extends baseCar {
     }
 }
 
-class factory {
-    createCar(){
-        throw new Error('This method is not implemented yet!');
+class Factory {
+    static create(type) {
+        switch (type) {
+            case "product1":
+                return new Product1();
+            case "product2":
+                return new Product2();
+        }
     }
 }
 
-class factoryA extends factory {
-    createCar(){
-        return new carA(); /* ← La factory a que retorna el producto a */
-    }
-}
-
-class factoryB extends factory {
-    createCar(){
-        return new carB(); /* ← La factory b que retorna el producto b */
-    }
-}
-
-const factoryAInstance = new factoryA();
-const factoryBInstance = new factoryB();
-
-const carAInstance = factoryAInstance.createCar();
-const carBInstance = factoryBInstance.createCar();
+const carAInstance = Factory.create("product1");
+const carBInstance = Factory.create("product2");
 
 console.log(carAInstance.showCost()); // 10000
 console.log(carBInstance.showCost()); // 20000
